@@ -1,0 +1,468 @@
+:root {
+  --navy: #003366;
+  --orange: #fe781e;
+  --blue: #5f9fe0;
+  --light-blue: #e2f2fd;
+  --white: #ffffff;
+  --border: #d6e9ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--navy);
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: var(--navy);
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.orange {
+  color: var(--orange);
+}
+.small-title {
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid var(--orange);
+  cursor: pointer;
+}
+.btn-orange {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.btn-outline {
+  background-color: var(--white);
+  color: var(--orange);
+  padding: 6px 18px;
+}
+.btn-full {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+}
+.navbar {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+.logo img {
+  height: 38px;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+.nav-links a {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 0;
+}
+.nav-links a.active {
+  color: var(--orange);
+  border-bottom: 3px solid var(--orange);
+}
+.hero {
+  background-color: var(--light-blue);
+  background-image: url("https://res.cloudinary.com/dwh7w9kz1/image/upload/v1793204857/Climbing_Towards_Success_dcuk4i.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  padding: 60px 0;
+}
+.hero-text {
+  max-width: 500px;
+}
+.hero h1 {
+  font-size: 46px;
+  color: var(--navy);
+  margin-bottom: 15px;
+}
+.hero p {
+  color: var(--blue);
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.journey {
+  padding: 50px 0 70px;
+}
+.journey h2 {
+  font-size: 30px;
+  color: var(--navy);
+}
+.journey-subtitle {
+  color: var(--blue);
+  margin: 5px 0 25px;
+}
+.journey-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+.journey-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+.step-number {
+  display: block;
+  color: var(--orange);
+  font-size: 30px;
+  font-weight: bold;
+}
+.journey-card h3 {
+  font-size: 16px;
+  color: var(--navy);
+  margin: 8px 0 5px;
+}
+.journey-card p {
+  font-size: 14px;
+  color: var(--blue);
+}
+.banner {
+  background-color: var(--light-blue);
+  background-image: url("https://res.cloudinary.com/dwh7w9kz1/image/upload/v1793204868/Minimalist_E-learning_Banner_with_Graduation_Cap_l9jd7u.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  padding: 40px 0;
+}
+
+.banner-text {
+  max-width: 500px;
+}
+
+.banner h1 {
+  font-size: 38px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.banner p {
+  color: var(--blue);
+}
+
+.courses {
+  padding: 40px 0 20px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.course-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.video-box {
+  aspect-ratio: 16 / 9;
+  margin-bottom: 10px;
+}
+
+.video-box a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.video-box a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  margin: -24px 0 0 -34px;
+  background-color: #ff0000;
+  border-radius: 12px;
+}
+
+.video-box a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -11px 0 0 -7px;
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 18px solid #ffffff;
+}
+
+.course-card h3 {
+  font-size: 16px;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.course-card p {
+  font-size: 14px;
+  color: gray;
+}
+
+.explore {
+  padding: 20px 0 60px;
+}
+
+.explore-box {
+  background-color: var(--light-blue);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.explore-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dots {
+  width: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--orange);
+}
+
+.explore-left h3 {
+  font-size: 17px;
+  color: var(--navy);
+}
+
+.explore-left p {
+  font-size: 14px;
+  color: var(--blue);
+}
+
+/* Contact page */
+.contact {
+  padding: 40px 0 60px;
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-info {
+  width: 33%;
+  background-color: var(--light-blue);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 25px 20px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.info-block {
+  margin-bottom: 15px;
+}
+
+.info-block h3 {
+  font-size: 15px;
+  color: var(--orange);
+}
+
+.info-block a,
+.info-block p {
+  font-size: 14px;
+  color: var(--navy);
+  margin-bottom: 0;
+}
+
+.contact-form {
+  width: 67%;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 25px 20px;
+}
+
+.form-note {
+  font-size: 14px;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  width: 50%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.form-group textarea {
+  height: 110px;
+}
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}
+@media (max-width: 900px) {
+  .journey-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .hero,
+  .banner {
+    background-size: 50%;
+    background-position: right bottom;
+  }
+}
+@media (max-width: 600px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .hero,
+  .banner {
+    background-size: 90%;
+    background-position: center bottom;
+  }
+
+  .hero {
+    padding: 40px 0 170px;
+  }
+
+  .banner {
+    padding: 30px 0 120px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .journey-cards,
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-row .form-group {
+    width: 100%;
+  }
+
+  .explore-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
