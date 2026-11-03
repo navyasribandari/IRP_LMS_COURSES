@@ -60,4 +60,4 @@ The course cards on the Courses page show each video thumbnail with a play butto
 
 ## Author
 
-Asifa
+Bandari Navya Sri
