@@ -4,7 +4,7 @@ A responsive three-page front-end website that recreates the IRP LMS learning pl
 
 ## Live Demo
 
-- Live site:https://irp-lms-project.vercel.app/
+- Live site:https://irplmsproject.vercel.app
 - GitHub repository: https://github.com/navyasribandari/IRP_LMS_COURSES.git
 
 ## Pages
